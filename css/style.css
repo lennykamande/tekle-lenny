@@ -1,15 +1,40 @@
-@media (max-width:480px) {
-    body{
-        background-color: azure;
-    }
+#header {
+  display: flex;
+}
+header img {
+  max-width: 400px;
+  width: 50%;
+}
+header .logo {
+  justify-self: start;
+  flex: 1;
+}
+header .nav-bar {
+  flex: 2;
+}
+header ul {
+  display: flex;
+  justify-content: end;
+}
+header li {
+  list-style: none;
+  margin-right: 20px;
+}
+.nav-bar a {
+  text-decoration: none;
 }
 
-.flex-container{
-    display: flex;
+.flex-container {
+  display: flex;
 }
 .flex-container > div {
-    margin: 10px;
-    padding: 20px;
-    font-size: 20px;
-    flex: 30%;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  flex: 30%;
+}
+@media screen and (max-width: 480px) {
+  .pricing > * {
+    width: 100%;
+  }
 }
